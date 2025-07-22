@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+}
+body{
+    transition: background-color 0.5s ease-in-out;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    font-size: 1.3em;
+}
+#bgCol{
+    height: 25px;
+    width: 25px;
+}
+#heading1{
+    font-family: 'Courier New', monospace;
+    font-size: 2em;
+    width: fit-content;
+    margin: 40px auto;
+}
+.container1{
+    display: flex;
+}
+.container1 div{
+    font-size: 1.1em;
+    padding: 10px;
+}
+#section2{
+    margin-top: 30px;
+}
+.offer-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 320px);
+    gap: 30px;
+    justify-content: center;
+    margin-top: 25px;
+}
+.tagline{
+    padding: 10px;
+}
+.offer-cards img{
+    height: 200px;
+    width: 280px;
+}
+.offer p{
+    padding-top: 10px;
+}
+.offer h4{
+    text-align: center;
+    font-size: 1.2em;
+}
+.offer{
+    height: 300px;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.offer:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+#section3{
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.testimonial{
+    display: flex;
+    margin: 20px;
+    padding: 10px;
+    border-radius:20px;
+}
+.testimonial p{
+    font-size: 1.03em;
+    line-height: 1.1;
+    padding: 10px;
+}
+.testimonial img{
+    height: 120px;
+    width: 100px;
+}
+#t1{
+    margin-right: 400px;
+    background-color: pink;
+}
+#t3{
+    margin-right: 400px;
+    background-color: rgb(116, 216, 231);
+}
+#t1 img, #t3 img{
+    margin-right: 20px;
+}
+#t2{
+    margin-left: 400px;
+    background-color:orange;
+}
