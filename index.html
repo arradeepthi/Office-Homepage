@@ -9,17 +9,20 @@
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Who are We</a></li>
-                <li><a href="#">What do we do</a></li>
-                <li><a href="directors.html">Directors</a></li>
-                <li><a href="#">Clients Testimonials</a></li>
-            </ul>
-            <img id="bgCol" src="assets/dark.png">
+            <div class="mobile-nav">
+                <img id="menuIcon" src="assets/menu.png" alt="menu" />
+            </div>
+            <div id="navLinks">
+                <a href="#">Home</a>
+                <a href="#section1">Who are We</a>
+                <a href="#section2">What do we do</a>
+                <a href="#section4">Directors</a>
+                <a href="#section3">Clients Testimonials</a>
+            </div>
+            <img id="bgCol" src="assets/dark.png" />
         </nav>
     </header>
-    <img src="assets/logo.png" alt="Miratos Logo" height="300px" width="100%">
+    <img src="assets/logo.png" alt="Miratos Logo" height="auto" width="100%">
 
     <div id="section1">
         <h1 id="heading1"></h1>
@@ -40,7 +43,7 @@
     <div id="section2">
         <h2 id="heading2" style="text-align: center">EXPLORE OUR SERVICES</h2>
         <p class="tagline"><i>We design intelligent platforms that empower businesses to scale faster, work smarter, and innovate confidently. From cloud-native applications to enterprise automation, Miratos delivers solutions that are secure, future-ready, and user-centric.</i></p>
-        <div class="offer-cards">
+        <div class="offer-cards" id="carousel">
             <div class="offer">
                 <h4>Customer Software Development</h4>
                 <img src="assets/offer1.png" alt="Software Development">
@@ -100,7 +103,22 @@
     </div>
 
     <div id="section4">
-        <h3>Connect With Us</h3>
+        <h1 id="page-title">Meet Our Directors</h1>
+        <div class="directors-section" id="dc">
+            <div class="director-card">
+                <img src="assets/client2.jpg" alt="director1">
+                <h3>Dr. Radhika Sharma</h3>
+                <p>Chief Executive Officer </p>
+                <p>Radhika brings 20+ years of experience in tech leadership and innovation strategy.</p>
+                <a href="#" id="dca1">LinkedIn</a>
+            </div>
+            <div class="director-card">
+                <img src="assets/client1.jpg" alt="director2">
+                <h3>Mr. Anil Verma</h3>
+                <p>Anil leads operations and ensures projects scale efficiently and sustainably.</p>
+                <a href="#" id="dca2">LinkedIn</a>
+            </div>
+        </div>
     </div>
 
     <script src="script.js"></script>

@@ -1,25 +1,36 @@
 *{
     margin: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     transition: background-color 0.5s ease-in-out;
+}
+a{
+    color: black;
 }
 nav{
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
+    justify-content: space-between;
+    padding: 15px 20px;
+    position: relative;
 }
-ul{
+#navLinks{
     display: flex;
-    align-items: center;
-    justify-content: center;
     gap: 20px;
-    padding: 20px;
-}
-li{
     list-style: none;
+}
+.mobile-nav{
+    align-items: center;
+    gap: 15px;
+}
+#menuIcon{
+    display: none;
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
 }
 a{
     text-decoration: none;
@@ -46,11 +57,16 @@ a{
     margin-top: 30px;
 }
 .offer-cards{
-    display: grid;
-    grid-template-columns: repeat(3, 320px);
-    gap: 30px;
-    justify-content: center;
-    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 20px;
+    padding: 10px;
+}
+.offer-cards::-webkit-scrollbar{
+    display: none;
 }
 .tagline{
     padding: 10px;
@@ -111,4 +127,159 @@ a{
 #t2{
     margin-left: 400px;
     background-color:orange;
+}
+#page-title{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    margin: 10px;
+}
+.directors-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.directors-section img{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
+.director-card{
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    height: 400px;
+    width: 320px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border: 1px solid white ;
+     transition: all 0.3s ease-in-out;
+}
+.director-card:hover{
+    transform: translateY(-10px);
+}
+.director-card a{
+    color: rgb(20, 20, 219);
+    font-size: 2 em;
+}
+@media (max-width: 768px) {
+    #navLinks{
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        background-color: white;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 15px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        z-index: 999;
+    }
+    #navLinks a{
+        text-decoration: none;
+        color: black;
+        font-size: 1rem;
+    }
+    #navLinks.show{
+        display: flex;
+    }
+    #menuIcon{
+        display: flex;
+    }
+    nav{
+        flex-direction: column;
+        gap: 10px;
+    }
+    nav{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #bgCol{
+        align-self: flex-end;
+        margin-top: 10px;
+    }
+    .container1{
+        flex-direction: column;
+        padding: 10px;
+    }
+    .container1 img{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .offer-cards{
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        gap: 20px;
+        padding: 10px;
+    }
+    .offer-cards::-webkit-scrollbar{
+        display: none;
+    }
+    .offer{
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    #section2{
+        margin-top: 20px;
+    }
+    .testimonial{
+        flex-direction: column;
+        align-items: center;
+        margin: 15px;
+    }
+    .testimonial img{
+        order:-1;
+        width: 80px;
+        height: 100px;
+        margin: 10px 0;
+    }
+    .testimonial div{
+        padding: 10px;
+    }
+    .testimonial h4{
+        text-align: center;
+    }
+    #t1,#t2,#t3{
+        margin: 10px;
+    }
+    #heading1{
+        font-size: 1.5em;
+        text-align: center;
+    }
+    .tagline{
+        font-size: 0.95em;
+        padding: 0 10px;
+        text-align: center;
+    }
+    nav{
+        flex-wrap: wrap;
+    }
+    img[alt="Miratos Logo"]{
+    height: auto;
+    width: 100%;
+    }
+    .directors-section{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .director-card{
+        text-align: center;
+        margin: 10px;
+        padding: 10px;
+        height: 350px;
+        width: 280px;
+    }
+    .director-card img{
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+    }
+
 }
