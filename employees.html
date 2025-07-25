@@ -1,11 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Employees Page</title>
-</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Miratos Intranet Dashboard</title>
+  <link rel="stylesheet" href="emstyles.css">
+  <script src="emscript.js" defer></script>
+    </head>
 <body>
-    
+  <div class="page-container">
+    <nav class="sidebar">
+  <h2>Miratos</h2>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="#announcements">Announcements</a></li>
+    <li><a href="#project">Project Status</a></li>
+    <li><a href="#notes">Notes</a></li>
+    <li><a href="#calendar">Calendar</a></li>
+    <li><a href="#teams">Teams</a></li>
+    <li><a href="#suggestions">Suggestions</a></li>
+    <li><a href="#quick-links">Quick Links</a></li>
+  </ul>
+</nav>
+
+    </div class="main-content">
+    <div class="content">
+        <h1 class="header">Miratos Intranet Dashboard</h1>
+        <img id="img1" src="assets/logo.png">
+        <div class="welcome">
+          <h3>Welcome back, Employee!</h3>
+          <p id="time"></p>
+        </div>
+
+        <div class="section1">
+          <div class="announcements" id="announcements">
+            <h2><marquee>Announcements</marquee></h2>
+            <div id="scrollBar">
+              <div class="scroll-content">
+              <ul>
+                <li>
+                  <h4>System Maintenance Alert -</h4>
+                  <p>Our servers will undergo scheduled maintenance on <b>July 26th from 12:00 AM to 3:00 AM IST</b>. Please save your work and log out before the downtime.</p>
+                </li>
+                <li>
+                  <h4>Miratos Annual Day 2025 -</h4>
+                  <p>Mark your calendars! Miratos Annual Day is happening on <b>August 18th, 2025</b> at our Hyderabad HQ. Expect awars, games, and a lot of fun!</p>
+                </li>
+                <li>
+                  <h4>New Project Launch: "Neuro Notes" -</h4>
+                  <p>W've officially kicked off our new internal project -- <b>Neuro Notes</b> A note-taking tool designed for creative & neurodivergent minds. Interested in contributing? Contact the Innovation Team.</b></p>
+                </li>
+                <li>
+                  <h4>Team Delta Wins Quarterly Hackathon -</h4>
+                  <p>Congratulations to Team Delta for winning the Q2 Hackathon with their <b>AI-driven chatbot for HR automation</b>. You make us proud!</p>
+                </li>
+                <li>
+                  <h4>New Interns Joined Miratos -</h4>
+                  <p>Say hello to our newest talents from top universities across India. Welcome to the Miratos family, interns of Batch 2025!</p>
+                </li>
+                <li>
+                  <h4>Mid-Year Performance Reviews -</h4>
+                  <p>Reviews begin on <b>August 1st.</b> Managers and employees are encouraged to book their slots in advance through the HR calendar.</p>
+                </li>
+                <li>
+                  <h4>Friday Learning Sessions: AI & You -</h4>
+                  <p>Starting this Firday, attend weekly knowledge-sharing sessions hosted by our ML experts. Check the <b>Intranet Events Calendar </b> for topics and timings.</p>
+                </li>
+              </ul>
+
+              <ul>
+                <li>
+                  <h4>System Maintenance Alert -</h4>
+                  <p>Our servers will undergo scheduled maintenance on <b>July 26th from 12:00 AM to 3:00 AM IST</b>. Please save your work and log out before the downtime.</p>
+                </li>
+                <li>
+                  <h4>Miratos Annual Day 2025 -</h4>
+                  <p>Mark your calendars! Miratos Annual Day is happening on <b>August 18th, 2025</b> at our Hyderabad HQ. Expect awars, games, and a lot of fun!</p>
+                </li>
+                <li>
+                  <h4>New Project Launch: "Neuro Notes" -</h4>
+                  <p>W've officially kicked off our new internal project -- <b>Neuro Notes</b> A note-taking tool designed for creative & neurodivergent minds. Interested in contributing? Contact the Innovation Team.</b></p>
+                </li>
+                <li>
+                  <h4>Team Delta Wins Quarterly Hackathon -</h4>
+                  <p>Congratulations to Team Delta for winning the Q2 Hackathon with their <b>AI-driven chatbot for HR automation</b>. You make us proud!</p>
+                </li>
+                <li>
+                  <h4>New Interns Joined Miratos -</h4>
+                  <p>Say hello to our newest talents from top universities across India. Welcome to the Miratos family, interns of Batch 2025!</p>
+                </li>
+                <li>
+                  <h4>Mid-Year Performance Reviews -</h4>
+                  <p>Reviews begin on <b>August 1st.</b> Managers and employees are encouraged to book their slots in advance through the HR calendar.</p>
+                </li>
+                <li>
+                  <h4>Friday Learning Sessions: AI & You -</h4>
+                  <p>Starting this Firday, attend weekly knowledge-sharing sessions hosted by our ML experts. Check the <b>Intranet Events Calendar </b> for topics and timings.</p>
+                </li>
+              </ul>
+              </div>
+            </div>
+          </div>
+          <div class="project-status" id="project">
+            <h2>Project Status</h2>
+            <div class="project-card">
+              <h4>Neuro Notes</h4>
+              <p>Team: Delta</p>
+              <p>Status: <span class="staus ongoing">Ongoing</span></p>
+              <div class="progress" style="width: 78%">78%</div>
+              <p>Deadline: Aug 15, 2025</p>
+            </div>
+            <div class="project-card">
+              <h4>ChatBot X</h4>
+              <p>Team: Echo</p>
+              <p>Status: <span class="staus-in-dev">In Development</span></p>
+              <div class="progress" style="width: 40%">40%</div>
+              <p>Deadline: Sep 5, 2025</p>
+            </div>
+            <div class="project-card">
+              <h4>Miratos HR Portal</h4>
+              <p>Team: Sigma</p>
+              <p>Status: <span class="status completed">Completed</span></p>
+              <div class="progress" style="width: 100%">100%</div>
+              <p>Deadline: July 10, 2025</p>
+            </div>
+          </div>
+        </div>
+        <div class="section2">
+          <div class="container">
+            <div class="notes" id="notes">
+              <h2>Quick Notes</h2>
+              <textarea id="notesInput" placeholder="Write your note here..."></textarea>
+              <button onclick="saveNote()" >Save Note</button>
+              <div id="savedNotes" class="notes-list"></div>
+            </div>
+            <div class="quick-stats">
+            <div class="stat-card">
+              <h3>12</h3>
+              <p>Active Projects</p>
+            </div>
+            <div class="stat-card">
+              <h3>6</h3>
+              <p>Teams</p>
+            </div>
+            <div class="stat-card">
+              <h3>134</h3>
+              <p>Completed Tasks</p>
+            </div>
+            <div class="stat-card">
+              <h3>6</h3>
+              <p>Clients</p>
+            </div>
+          </div>
+          </div>
+          <div class="calendar-container" id="calendar">
+            <h2 class="calendar-title">Task Calendar</h2>
+            <div class="calendar-header">
+              <button id="prevMonth">&lt;</button>
+              <h3 id="monthYear">July 2025</h3>
+              <button id="nextMonth">&gt;</button>
+            </div>
+            <div class="calendar-grid" id="calendarGrid"></div>
+
+            <div class="task-display" id="taskDisplay">
+              <h4 id="selectedDate">Click a date</h4>
+              <ul id="taskList"></ul>
+
+              <div class="task-inputs">
+                <input type="text" id="newTask" placeholder="Add task..." />
+                <button id="addTaskBtn">Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="team-info" id="teams">
+        <h2> Team & Department Info</h2>
+        <div class="team-scroll-wrapper">
+          <div class="team-scroll-track">
+            <div class="team-card"> <strong>Development</strong><br>Lead: Ravi Kumar<br>Members: 12</div>
+            <div class="team-card"> <strong>Design</strong><br>Lead: Aarti Sharma<br>Members: 6</div>
+            <div class="team-card"> <strong>Marketing</strong><br>Lead: Rakesh Verma<br>Members: 8</div>
+            <div class="team-card"> <strong>HR & Ops</strong><br>Lead: Sneha Patel<br>Members: 4</div>
+            <div class="team-card"> <strong>QA & Testing</strong><br>Lead: Priya Desai<br>Members: 5</div>
+            <div class="team-card"> <strong>Logistics</strong><br>Lead: Manish Rao<br>Members: 3</div>
+
+            <div class="team-card"> <strong>Development</strong><br>Lead: Ravi Kumar<br>Members: 12</div>
+            <div class="team-card"> <strong>Design</strong><br>Lead: Aarti Sharma<br>Members: 6</div>
+            <div class="team-card"> <strong>Marketing</strong><br>Lead: Rakesh Verma<br>Members: 8</div>
+            <div class="team-card"> <strong>HR & Ops</strong><br>Lead: Sneha Patel<br>Members: 4</div>
+            <div class="team-card"> <strong>QA & Testing</strong><br>Lead: Priya Desai<br>Members: 5</div>
+            <div class="team-card"> <strong>Logistics</strong><br>Lead: Manish Rao<br>Members: 3</div>
+          </div>
+        </div>
+      </div> 
+
+      <div class="suggestion-box" id="suggestions">
+  <h3>Feedback / Suggestions</h3>
+  <form id="feedbackForm">
+    <input type="text" placeholder="Your Name (optional)" />
+    <textarea placeholder="Enter your feedback or idea..." required></textarea>
+    <button type="submit">Submit</button>
+  </form>
+  <p id="feedbackMessage"></p>
+</div>
+
+<div class="quick-links" id="quick-links">
+  <h3>Quick Links</h3>
+  <div class="links-container">
+    <a href="#">HR Portal</a>
+    <a href="#">Leave Tracker</a>
+    <a href="#">Payroll System</a>
+    <a href="#">Employee Directory</a>
+  </div>
+</div>
+<footer class="intranet-footer">
+  <p>© 2025 Miratos Corporation. All rights reserved.</p>
+  <p>Version 1.0 | Contact: intranet@miratos.com</p>
+</footer>
+
+
+      </div>
+    </div>
+  </div>
 </body>
 </html>
